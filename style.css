@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-size: 1.5em;
+  color: #175190;
+  text-align: center;
+}
+.accordion {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-section {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.accordion-title {
+  background: #175190;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.2em;
+  display: inline-block;
+  width: 100%;
+}
+
+.accordion-title:hover {
+  background: #0056b3;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background: #fff;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-section:nth-child(even) .accordion-title {
+  background-color: #f4f4f4 !important;
+  color: #333;
+}
+.accordion-section:nth-child(even) .remove-section {
+  color: black !important;
+}
+.accordion-section.active .accordion-content {
+  max-height: 200px;
+  padding: 15px;
+}
+.accordion-section.active .accordion-title {
+  background-color: #3484da !important;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #175190;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.remove-section {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.remove-section:hover {
+  color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .accordion-title {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
