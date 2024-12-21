@@ -25,8 +25,17 @@ This project, implemented by **Bilal Ahmad Parray**, was developed as part of a 
 ## Setup
 
 1. Clone or download the project files.
+
+```
+https://github.com/bilalparray/accordion-task.git
+```
+
 2. Open `index.html` in your browser.
-3. Use the accordion to test its functionality.
+3. Use the below link to test its functionality.
+
+```
+https://bilalparray.github.io/accordion-task/
+```
 
 ---
 
